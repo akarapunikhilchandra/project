@@ -27,7 +27,7 @@ VALIDATE(){
     fi
 }
 
-cp /home/centos/project/ /etc/yum.repos.d/mongo.repo ?>> $LOGFILE
+cp /home/centos/project/mongo.repo /etc/yum.repos.d/mongo.repo ?>> $LOGFILE
 
 VALIDATE $? "copy successfull"
 
